@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c16b11dcewolk"]
 
-[ext_resource type="Script" path="res://enemyBulletArea.gd" id="1_n3kx3"]
+[ext_resource type="Script" path="res://Scripts/enemyBulletArea.gd" id="1_n3kx3"]
 [ext_resource type="Texture2D" uid="uid://drsy0pm20k37y" path="res://Sprites/Bullets/All_Fire_Bullet_Pixel_16x16_01.png" id="2_sslvh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pahm"]

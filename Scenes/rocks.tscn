@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://hrm7lushglne"]
 
-[ext_resource type="Script" path="res://rocks.gd" id="1_0m001"]
+[ext_resource type="Script" path="res://Scripts/rocks.gd" id="1_0m001"]
 [ext_resource type="Texture2D" uid="uid://dgsbjiwlhphoq" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain B - medium.png" id="1_ju8ux"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vedq6"]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=31 format=3 uid="uid://ysbuj3gwgc5a"]
 
 [ext_resource type="Texture2D" uid="uid://dt0u63jorcdk7" path="res://Sprites/Skeletons Download/002_attack.png" id="1_e82ov"]
-[ext_resource type="Script" path="res://Enemy2D.gd" id="1_gea0a"]
+[ext_resource type="Script" path="res://Scripts/Enemy2D.gd" id="1_gea0a"]
 [ext_resource type="Texture2D" uid="uid://qan8eu3q04bn" path="res://Sprites/Skeletons Download/002_death.png" id="2_jxptx"]
 [ext_resource type="Texture2D" uid="uid://blmubmrbtymun" path="res://Sprites/Skeletons Download/002_idle.png" id="3_ioq4k"]
 [ext_resource type="Texture2D" uid="uid://b7km10r0078qo" path="res://Sprites/Skeletons Download/002_walking.png" id="4_63v84"]
-[ext_resource type="Script" path="res://blueSkeletonProperties.gd" id="6_v3w72"]
+[ext_resource type="Script" path="res://Scripts/blueSkeletonProperties.gd" id="6_v3w72"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btcjr"]
 radius = 23.0

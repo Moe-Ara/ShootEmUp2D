@@ -16,9 +16,8 @@ var can_shoot=true
 var fire_rate=0.1
 var ammo=0
 
-const Utils = preload("res://utils.gd")
 @onready var animated_sprite= $AnimatedSprite2D
-@onready var Bullet = preload("res://bulletArea.tscn")
+@onready var Bullet = preload("res://Scenes/bulletArea.tscn")
 @onready var Hands=$AnimatedSprite2D/Hands
 @onready var MuzzleFlash=$AnimatedSprite2D/Hands/leftHand/WeaponR1/MuzzleFlash
 @onready var Bullet_Marker=$AnimatedSprite2D/Hands/leftHand/WeaponR1/shootingJoint
@@ -93,6 +92,7 @@ func shoot():
 func handle_movement(delta):
 	var mouse_position =get_local_mouse_position()
 	var direction = Input.get_vector("move_left", "move_right","move_up","move_down")
+	print(speed)
 	velocity=direction*speed
 	if mouse_position.x>0.0 and not is_facing_right:
 		is_facing_right=true			

@@ -1,12 +1,12 @@
 [gd_scene load_steps=32 format=3 uid="uid://cx10is0fvfkio"]
 
-[ext_resource type="Script" path="res://Enemy2D.gd" id="1_661ve"]
+[ext_resource type="Script" path="res://Scripts/Enemy2D.gd" id="1_661ve"]
 [ext_resource type="Texture2D" uid="uid://dycqgdxa7ajh4" path="res://Sprites/Skeletons Download/004_attack.png" id="1_s1jhg"]
 [ext_resource type="Texture2D" uid="uid://bg2sdkct5i1p5" path="res://Sprites/Skeletons Download/004_death.png" id="2_00w8n"]
 [ext_resource type="Texture2D" uid="uid://c6ann34ims8i4" path="res://Sprites/Skeletons Download/004_idle.png" id="3_1ybj4"]
 [ext_resource type="Texture2D" uid="uid://bmwbo5cbnx3gw" path="res://Sprites/Skeletons Download/004_walking.png" id="4_7wlck"]
-[ext_resource type="Script" path="res://redSkeleton.gd" id="6_gh3rm"]
-[ext_resource type="Script" path="res://redSkeletonFire.gd" id="7_4wpch"]
+[ext_resource type="Script" path="res://Scripts/redSkeleton.gd" id="6_gh3rm"]
+[ext_resource type="Script" path="res://Scripts/redSkeletonFire.gd" id="7_4wpch"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eoqcs"]
 atlas = ExtResource("1_s1jhg")

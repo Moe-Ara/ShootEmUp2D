@@ -1,6 +1,6 @@
 [gd_scene load_steps=39 format=3 uid="uid://bycb2xxfw1x8m"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_7paw7"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_7paw7"]
 [ext_resource type="Texture2D" uid="uid://crlp78qc38iyb" path="res://Sprites/Ellie Sprite sheet/Spritesheet/Ellie spritesheet.png" id="2_kne56"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xclqt"]

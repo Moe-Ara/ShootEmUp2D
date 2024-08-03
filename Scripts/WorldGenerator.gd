@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var player = get_owner().get_node("Player")
-const chunk_scene = preload("res://chunk.tscn")
+const chunk_scene = preload("res://Scenes/chunk.tscn")
 @export var chunk_size: Vector2 = Vector2(3423, 1979)
 @export var load_radius: int = 2  # Set to 1 for a 3x3 grid around the player
 var chunks: Dictionary = {}  # To store currently loaded chunks

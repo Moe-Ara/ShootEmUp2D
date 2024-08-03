@@ -4,7 +4,7 @@ extends Marker2D
 var origina_fire_rate
 var fire_rate
 var player
-@onready var Bullet = preload("res://enemyBullet.tscn")
+@onready var Bullet = preload("res://Scenes/enemyBullet.tscn")
 func _ready():
 	origina_fire_rate=Properties.fire_rate
 	fire_rate=Properties.fire_rate

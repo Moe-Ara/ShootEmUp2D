@@ -1,5 +1,5 @@
 extends Node2D
-const Utils = preload("res://utils.gd")
+const Utils = preload("res://Scripts/utils.gd")
 @export var weaponRotation=rotation
 func _ready():	
 	pass 

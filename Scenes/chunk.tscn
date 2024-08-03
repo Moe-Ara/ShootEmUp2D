@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dhbgu3450e2o8"]
 
-[ext_resource type="Texture2D" uid="uid://bbgyjhc7k1cv" path="res://Sprites/Arid Badlands/Backgrounds/Desert_BG_2 - dark.png" id="2_pu6ld"]
+[ext_resource type="Texture2D" uid="uid://bbgyjhc7k1cv" path="res://Sprites/Arid Badlands/Backgrounds/Desert_BG_2 - dark.png" id="1_kwstl"]
 
 [node name="Chunk" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-685.0, 685.0]
@@ -8,6 +8,6 @@ metadata/_edit_horizontal_guides_ = [-396.0, 396.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_pu6ld")
+texture = ExtResource("1_kwstl")
 
 [node name="ObstaclesContainer" type="Node2D" parent="."]
