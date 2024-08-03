@@ -80,7 +80,7 @@ func handle_states():
 	if is_dead:
 		state=DEAD
 		return
-	if(not player.is_dead):
+	if not player.is_dead:
 		if (player.global_position - global_position).length() <player.get_node("AttackArea").get_child(0,false).shape.radius:
 			state=HIT
 		else:

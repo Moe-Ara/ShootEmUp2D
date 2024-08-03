@@ -2,7 +2,7 @@ extends Node2D
 @export var chunk_size: Vector2= Vector2(3423, 1979)
 @export var Items: Array= []
 @onready var player = get_owner().get_node("Player")
-const original_drop_rate=60*5
+const original_drop_rate=30
 var drop_rate
 func _ready():
 	drop_rate=original_drop_rate
