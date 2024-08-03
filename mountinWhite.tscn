@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci5rchrn3mwwq"]
+
+[ext_resource type="Texture2D" uid="uid://dybnvshf14n34" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 2C - light.png" id="1_25tvn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o32n1"]
+radius = 96.7691
+height = 241.98
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_25tvn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-30, 17)
+rotation = -1.91299
+shape = SubResource("CapsuleShape2D_o32n1")

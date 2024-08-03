@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu1c3bs2oe851"]
+
+[ext_resource type="Texture2D" uid="uid://b77lvi1mc8y1c" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain D - medium.png" id="1_mpud7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7bgg3"]
+radius = 38.0
+height = 272.593
+
+[node name="rockyMount" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mpud7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(41, 23)
+rotation = 1.5013
+shape = SubResource("CapsuleShape2D_7bgg3")

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://m041syyb5p1a"]
+
+[ext_resource type="Texture2D" uid="uid://qddv823v04jv" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 C.png" id="1_m6mpx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l5rew"]
+radius = 28.7825
+height = 211.158
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wcktq"]
+height = 177.725
+
+[node name="cactiGreenTall" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m6mpx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 48)
+rotation = 1.24225
+shape = SubResource("CapsuleShape2D_l5rew")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(11, 89)
+rotation = 1.23091
+shape = SubResource("CapsuleShape2D_wcktq")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnsc13al87t8k"]
+
+[ext_resource type="Texture2D" uid="uid://bpn8jhnwpgp0w" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Extras/bullet.png" id="1_3meod"]
+[ext_resource type="Script" path="res://bulletArea.gd" id="1_hb3x8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8pahm"]
+
+[node name="Area2D" type="Area2D"]
+rotation = -0.658581
+scale = Vector2(0.256202, 0.256202)
+collision_layer = 4
+collision_mask = 2147483658
+script = ExtResource("1_hb3x8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.40346, 1.40346)
+shape = SubResource("CircleShape2D_8pahm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0283564, 0.0283564)
+texture = ExtResource("1_3meod")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyte3cfrufgg0"]
+
+[ext_resource type="Texture2D" uid="uid://btca3sr1x4mkl" path="res://Sprites/Arid Badlands/Rocks/Desert Small Rockpile- Dif terrain E - medium.png" id="1_31vwm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m5yg4"]
+radius = 39.4568
+height = 142.687
+
+[node name="miniRocks1" type="StaticBody2D"]
+collision_layer = 2147483648
+collision_mask = 2147484175
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+rotation = -1.73363
+shape = SubResource("CapsuleShape2D_m5yg4")
+
+[node name="DesertSmallRockpile-DifTerrainE-Medium" type="Sprite2D" parent="."]
+position = Vector2(3, -17)
+texture = ExtResource("1_31vwm")

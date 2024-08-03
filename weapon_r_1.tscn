@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cblyjp5c6ty8g"]
+
+[ext_resource type="Texture2D" uid="uid://bojjw8pohlqin" path="res://Sprites/Weapons/weaponR1.png" id="1_ldujp"]
+[ext_resource type="Texture2D" uid="uid://bykws2hhtv7n7" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Extras/muzzle.png" id="2_0if7k"]
+
+[node name="WeaponR1" type="Sprite2D"]
+position = Vector2(85, -78)
+scale = Vector2(0.162109, 0.162109)
+texture = ExtResource("1_ldujp")
+
+[node name="mountingJoint" type="Marker2D" parent="."]
+position = Vector2(-123.373, 598.361)
+
+[node name="shootingJoint" type="Marker2D" parent="."]
+position = Vector2(690.891, 400.964)
+
+[node name="MuzzleFlash" type="Sprite2D" parent="."]
+position = Vector2(925.303, 394.796)
+scale = Vector2(0.259757, 0.259757)
+texture = ExtResource("2_0if7k")

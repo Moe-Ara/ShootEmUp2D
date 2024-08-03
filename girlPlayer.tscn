@@ -1,0 +1,297 @@
+[gd_scene load_steps=52 format=3 uid="uid://dwuhc1jgobsyh"]
+
+[ext_resource type="Texture2D" uid="uid://oiiokhvotdsb" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/roll_0.png" id="1_0ka7c"]
+[ext_resource type="Script" path="res://player.gd" id="1_ec1o5"]
+[ext_resource type="Texture2D" uid="uid://cm2c2eyr3r2yg" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/roll_1.png" id="2_xd7vi"]
+[ext_resource type="Texture2D" uid="uid://5247bvowfdun" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/roll_2.png" id="3_0oqow"]
+[ext_resource type="Texture2D" uid="uid://j7op5hq7pvic" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/roll_3.png" id="4_xy60g"]
+[ext_resource type="Texture2D" uid="uid://dcx5t87qtjs3" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/roll_4.png" id="5_73hej"]
+[ext_resource type="Texture2D" uid="uid://cafajix8we36l" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_0.png" id="6_iucq7"]
+[ext_resource type="Texture2D" uid="uid://brb5dhn543gsm" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_1.png" id="7_ya13w"]
+[ext_resource type="Texture2D" uid="uid://dai85she2no4u" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_2.png" id="8_wwmky"]
+[ext_resource type="Texture2D" uid="uid://cannaofshghns" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_3.png" id="9_g3eup"]
+[ext_resource type="Texture2D" uid="uid://b7jblg32vmrqk" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_4.png" id="10_c3sl1"]
+[ext_resource type="Texture2D" uid="uid://cwwxgjby3l1s7" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_5.png" id="11_65h0q"]
+[ext_resource type="Texture2D" uid="uid://cot5huh4jcr2e" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_6.png" id="12_s57xp"]
+[ext_resource type="Texture2D" uid="uid://dyoqdbxed5p1s" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_7.png" id="13_sqirx"]
+[ext_resource type="Texture2D" uid="uid://wn20cw3xpxj4" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_8.png" id="14_j2tyr"]
+[ext_resource type="Texture2D" uid="uid://pqw4gvcn6huk" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/death_9.png" id="15_hn1u2"]
+[ext_resource type="Texture2D" uid="uid://bdty5scofgq6h" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/hit_white.png" id="17_hnyjh"]
+[ext_resource type="Texture2D" uid="uid://6yfrh3d2u1ej" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_0.png" id="19_vdni2"]
+[ext_resource type="Texture2D" uid="uid://dohg4ln78pxbd" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_1.png" id="20_wxflt"]
+[ext_resource type="Texture2D" uid="uid://by5htw5di41jp" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_2.png" id="21_pqm21"]
+[ext_resource type="Texture2D" uid="uid://o61xo263rrpk" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_3.png" id="22_xgws3"]
+[ext_resource type="Texture2D" uid="uid://j27blcmerwdw" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_4.png" id="23_e15bf"]
+[ext_resource type="Texture2D" uid="uid://3gag5e5jpsk1" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/idle_5.png" id="24_ed6j2"]
+[ext_resource type="Texture2D" uid="uid://1iln6gm5mk2h" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_0.png" id="25_ytjel"]
+[ext_resource type="Texture2D" uid="uid://bmlxlib0x842w" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_1.png" id="26_akd8r"]
+[ext_resource type="Texture2D" uid="uid://c370yifbaa3ie" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_2.png" id="27_kt22f"]
+[ext_resource type="Texture2D" uid="uid://dxb83vlsv7cxh" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_3.png" id="28_teynq"]
+[ext_resource type="Texture2D" uid="uid://bilrgdwxcttfa" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_4.png" id="29_7tftx"]
+[ext_resource type="Texture2D" uid="uid://bmlj2q0vxlx5l" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_5.png" id="30_sqtm7"]
+[ext_resource type="Texture2D" uid="uid://b5725prn3yx6k" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_6.png" id="31_1uawx"]
+[ext_resource type="Texture2D" uid="uid://b5d2voljat8oa" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 2/no hands/walk_7.png" id="32_mrj2s"]
+[ext_resource type="Texture2D" uid="uid://bvcfqi7v0xqqa" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_0.png" id="33_3j0nc"]
+[ext_resource type="Texture2D" uid="uid://coo12ie3m4uge" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_1.png" id="34_367fe"]
+[ext_resource type="Script" path="res://rotationScirpt.gd" id="34_kp7tm"]
+[ext_resource type="Texture2D" uid="uid://cdioa3wrnxq5r" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_2.png" id="35_nyamc"]
+[ext_resource type="Texture2D" uid="uid://o12tdtnvbm7c" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_3.png" id="36_8x7jh"]
+[ext_resource type="Texture2D" uid="uid://cwirygnwfc48v" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_4.png" id="37_iudup"]
+[ext_resource type="Texture2D" uid="uid://bio4i7ghncxdk" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Left hands/handL1/idle_5.png" id="38_kmlk6"]
+[ext_resource type="PackedScene" uid="uid://cblyjp5c6ty8g" path="res://weapon_r_1.tscn" id="39_06m4l"]
+[ext_resource type="Texture2D" uid="uid://52menv07gml" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_0.png" id="40_xk487"]
+[ext_resource type="Texture2D" uid="uid://cesxu88uxym3" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_1.png" id="41_o3n0x"]
+[ext_resource type="Texture2D" uid="uid://bi208f7li7wks" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_2.png" id="42_h1qgh"]
+[ext_resource type="Texture2D" uid="uid://bor10of2d5wh5" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_3.png" id="43_20en2"]
+[ext_resource type="Texture2D" uid="uid://co0c75tv15fu3" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_4.png" id="44_mf3ld"]
+[ext_resource type="Texture2D" uid="uid://ddnlcnmqha7yv" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Animated body parts/Right hands/handR1/idle_5.png" id="45_vni1m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yknvi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0ka7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xd7vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0oqow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xy60g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_73hej")
+}],
+"loop": true,
+"name": &"dash",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_iucq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ya13w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wwmky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g3eup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_c3sl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_65h0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s57xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_sqirx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j2tyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hn1u2")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_hnyjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hnyjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hnyjh")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_vdni2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wxflt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pqm21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xgws3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_e15bf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ed6j2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_ytjel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_akd8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kt22f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_teynq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7tftx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_sqtm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1uawx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_mrj2s")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_11k50"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_3j0nc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_367fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_nyamc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_8x7jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_iudup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_kmlk6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vm4cu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_xk487")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_o3n0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_h1qgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_20en2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_mf3ld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_vni1m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_suvf4"]
+radius = 270.0
+height = 800.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3sxp5"]
+radius = 10200.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_18knv"]
+radius = 66.1211
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.1, 0.1)
+disable_mode = 2
+collision_mask = 2147484170
+script = ExtResource("1_ec1o5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(27, -718)
+sprite_frames = SubResource("SpriteFrames_yknvi")
+animation = &"hit"
+frame_progress = 0.360695
+metadata/_edit_group_ = true
+
+[node name="Hands" type="Node2D" parent="AnimatedSprite2D"]
+position = Vector2(-27, 688)
+scale = Vector2(10, 10)
+script = ExtResource("34_kp7tm")
+
+[node name="leftHand" type="AnimatedSprite2D" parent="AnimatedSprite2D/Hands"]
+position = Vector2(-0.599995, -68.6)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_11k50")
+animation = &"idle"
+metadata/_edit_group_ = true
+
+[node name="WeaponR1" parent="AnimatedSprite2D/Hands/leftHand" instance=ExtResource("39_06m4l")]
+position = Vector2(87, 438)
+scale = Vector2(0.381836, 0.311995)
+
+[node name="rightHand" type="AnimatedSprite2D" parent="AnimatedSprite2D/Hands"]
+position = Vector2(17.4, -66.3)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_vm4cu")
+animation = &"idle"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, -350)
+shape = SubResource("CapsuleShape2D_suvf4")
+metadata/_edit_group_ = true
+
+[node name="SpawnArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnArea"]
+shape = SubResource("CircleShape2D_3sxp5")
+debug_color = Color(0.605494, 0.528532, 0.330444, 0.42)
+
+[node name="AttackArea" type="Area2D" parent="."]
+position = Vector2(20, -500)
+scale = Vector2(4.40552, 6.6)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(0, 34)
+shape = SubResource("CircleShape2D_18knv")
+debug_color = Color(0.958382, 0.192083, 0.1871, 0.42)

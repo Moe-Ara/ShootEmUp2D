@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://crewspxod0vyg"]
+
+[ext_resource type="Texture2D" uid="uid://54hjy0x3ffbg" path="res://Sprites/Arid Badlands/Odds and Ends/Desert_terrain_l_Objective-Crashed Aerostatic-sz1-0.1.png" id="1_p683o"]
+[ext_resource type="Texture2D" uid="uid://pbql5g43fmpu" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 A.png" id="2_ipbgo"]
+[ext_resource type="Texture2D" uid="uid://qddv823v04jv" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 C.png" id="3_ivcv2"]
+[ext_resource type="Texture2D" uid="uid://f6cepy3bqerl" path="res://Sprites/Arid Badlands/Rocks/Desert Small Rockpile- Dif terrain B - dark.png" id="4_s572a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulnhj"]
+size = Vector2(140.46, 169.775)
+
+[node name="static" type="StaticBody2D"]
+position = Vector2(0, -1)
+disable_mode = 1
+collision_layer = 2147483648
+collision_mask = 2147484175
+
+[node name="DesertTerrainLObjective-crashedAerostatic-sz1-0_1" type="Sprite2D" parent="."]
+texture = ExtResource("1_p683o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-29, 13.5)
+rotation = 0.063719
+skew = 0.596903
+shape = SubResource("RectangleShape2D_ulnhj")
+
+[node name="GiantCactusPatch2x2A" type="Sprite2D" parent="."]
+position = Vector2(17, 30)
+scale = Vector2(0.397103, 0.397103)
+texture = ExtResource("2_ipbgo")
+
+[node name="GiantCactusPatch2x2C" type="Sprite2D" parent="."]
+position = Vector2(62, -27)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_ivcv2")
+
+[node name="DesertSmallRockpile-DifTerrainB-Dark" type="Sprite2D" parent="."]
+position = Vector2(-69, 44)
+texture = ExtResource("4_s572a")

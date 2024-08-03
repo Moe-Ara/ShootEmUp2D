@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl3ijxobevc6h"]
+
+[ext_resource type="Texture2D" uid="uid://bplcsw3cyeghg" path="res://Sprites/Free 2D Animated Vector Game Character Sprites/Extras/crosshair.png" id="1_pjltx"]
+[ext_resource type="Script" path="res://crosshair.gd" id="2_p6kuk"]
+
+[node name="Sprite2D" type="Sprite2D"]
+scale = Vector2(0.279999, 0.279999)
+texture = ExtResource("1_pjltx")
+script = ExtResource("2_p6kuk")

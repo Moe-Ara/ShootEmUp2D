@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw3q8t6be3u0e"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_3lqw8"]
+[ext_resource type="PackedScene" uid="uid://t5bwmdfe3i2l" path="res://world.tscn" id="1_t74tf"]
+[ext_resource type="PackedScene" uid="uid://bycb2xxfw1x8m" path="res://Player.tscn" id="5_4ln70"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_3lqw8")
+
+[node name="World" parent="." instance=ExtResource("1_t74tf")]
+
+[node name="Player" parent="." instance=ExtResource("5_4ln70")]
+position = Vector2(177, 10)
+collision_layer = 4
+collision_mask = 0

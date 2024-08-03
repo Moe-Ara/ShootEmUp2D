@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cbfim6q1bq1pw"
+path="res://.godot/imported/jumpEnd_2.png-2ff61cf0ea39d4ff05638e46d9f8de87.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Sprites/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Char 1/with hands/jumpEnd_2.png"
+dest_files=["res://.godot/imported/jumpEnd_2.png-2ff61cf0ea39d4ff05638e46d9f8de87.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

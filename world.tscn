@@ -1,0 +1,171 @@
+[gd_scene load_steps=19 format=3 uid="uid://t5bwmdfe3i2l"]
+
+[ext_resource type="Texture2D" uid="uid://dg4ywfhxyax8c" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 A-i.png" id="2_mdf1t"]
+[ext_resource type="Texture2D" uid="uid://ct1ahe0hi2r3o" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 1I - dark.png" id="5_ng2yv"]
+[ext_resource type="Texture2D" uid="uid://3q30c08h0363" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 1I - medium.png" id="6_0s1hs"]
+[ext_resource type="Texture2D" uid="uid://djovg0fsat25r" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 1E - dark.png" id="7_tiesx"]
+[ext_resource type="Texture2D" uid="uid://1u4r6kjs5ukn" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 1D - light.png" id="8_khfgr"]
+[ext_resource type="Texture2D" uid="uid://btca3sr1x4mkl" path="res://Sprites/Arid Badlands/Rocks/Desert Small Rockpile- Dif terrain E - medium.png" id="9_mag7o"]
+[ext_resource type="Texture2D" uid="uid://dgsbjiwlhphoq" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain B - medium.png" id="10_m74mx"]
+[ext_resource type="Texture2D" uid="uid://54hjy0x3ffbg" path="res://Sprites/Arid Badlands/Odds and Ends/Desert_terrain_l_Objective-Crashed Aerostatic-sz1-0.1.png" id="11_0bplh"]
+[ext_resource type="Texture2D" uid="uid://coxfam0ysipw5" path="res://Sprites/Arid Badlands/Odds and Ends/Rail Segment 2.2.png" id="12_0klw5"]
+[ext_resource type="Texture2D" uid="uid://bg0y15ra8sj6x" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 C-i.png" id="15_h7nma"]
+[ext_resource type="Texture2D" uid="uid://dbslbidgocjbb" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 D-i.png" id="16_xf1a2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mtot8"]
+radius = 147.727
+height = 297.727
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8a53f"]
+radius = 79.091
+height = 269.765
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wiymt"]
+radius = 50.0582
+height = 166.852
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_72xyq"]
+size = Vector2(35.6778, 13.6634)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p2mg1"]
+radius = 185.897
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dd1wu"]
+radius = 143.594
+height = 683.391
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u5f3a"]
+radius = 39.4568
+height = 142.687
+
+[node name="GameObjects" type="Node2D"]
+
+[node name="Area2D2" type="StaticBody2D" parent="."]
+position = Vector2(1225, -118)
+disable_mode = 1
+collision_layer = 2147483648
+collision_mask = 2147484167
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-26, 61)
+rotation = -0.098724
+scale = Vector2(0.88, 0.399998)
+shape = SubResource("CapsuleShape2D_mtot8")
+
+[node name="GiantCactusPatch2x2A-i" type="Sprite2D" parent="Area2D2"]
+texture = ExtResource("2_mdf1t")
+
+[node name="DersertRocks-Size1i-Dark2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(492, 923)
+texture = ExtResource("5_ng2yv")
+
+[node name="DersertRocks-Size1d-Light" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(688, 785)
+texture = ExtResource("8_khfgr")
+
+[node name="staticBody" type="StaticBody2D" parent="."]
+position = Vector2(-305, 64)
+collision_layer = 2147483648
+collision_mask = 527
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="staticBody"]
+position = Vector2(-4, 8)
+rotation = -1.31278
+shape = SubResource("CapsuleShape2D_8a53f")
+
+[node name="DesertSunkenRocks-DifTerrainB-Medium2" type="Sprite2D" parent="staticBody"]
+position = Vector2(-55, -44)
+rotation = -0.0993816
+scale = Vector2(0.502466, 0.63606)
+texture = ExtResource("10_m74mx")
+
+[node name="DesertSunkenRocks-DifTerrainB-Medium" type="Sprite2D" parent="staticBody"]
+texture = ExtResource("10_m74mx")
+
+[node name="static" type="StaticBody2D" parent="."]
+position = Vector2(294, 961)
+collision_layer = 2147483648
+collision_mask = 2147484175
+
+[node name="DesertTerrainLObjective-crashedAerostatic-sz1-0_1" type="Sprite2D" parent="static"]
+texture = ExtResource("11_0bplh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static"]
+position = Vector2(-33, -15)
+rotation = 0.063719
+skew = 0.596903
+shape = SubResource("CapsuleShape2D_wiymt")
+
+[node name="staticRailSegment" type="StaticBody2D" parent="."]
+position = Vector2(-8, 124)
+collision_layer = 2147483648
+collision_mask = 2147484175
+
+[node name="RailSegment2_2" type="Sprite2D" parent="staticRailSegment"]
+texture = ExtResource("12_0klw5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="staticRailSegment"]
+position = Vector2(103.547, -65.2879)
+rotation = 0.562084
+shape = SubResource("RectangleShape2D_72xyq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="staticRailSegment"]
+position = Vector2(179, -109)
+rotation = 0.562084
+shape = SubResource("RectangleShape2D_72xyq")
+
+[node name="Cacti" type="StaticBody2D" parent="."]
+
+[node name="GiantCactusPatch2x2C-i" type="Sprite2D" parent="Cacti"]
+position = Vector2(-289, 713)
+texture = ExtResource("15_h7nma")
+
+[node name="GiantCactusPatch2x2D-i" type="Sprite2D" parent="Cacti"]
+position = Vector2(-463, 641)
+texture = ExtResource("16_xf1a2")
+
+[node name="GiantCactusPatch2x2C-i2" type="Sprite2D" parent="Cacti"]
+position = Vector2(-307, 585)
+texture = ExtResource("15_h7nma")
+
+[node name="GiantCactusPatch2x2C-i3" type="Sprite2D" parent="Cacti"]
+position = Vector2(-434, 677)
+texture = ExtResource("15_h7nma")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cacti"]
+position = Vector2(-390, 722)
+rotation = 0.153866
+scale = Vector2(1.16491, 0.527022)
+shape = SubResource("CircleShape2D_p2mg1")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="DersertRocks-Size1i-Medium" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(-78, 974)
+scale = Vector2(2.37324, 2.37324)
+texture = ExtResource("6_0s1hs")
+
+[node name="DersertRocks-Size1e-Dark" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(-343, 1049)
+scale = Vector2(2.55174, 2.57945)
+texture = ExtResource("7_tiesx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-211, 1059)
+rotation = 1.33097
+shape = SubResource("CapsuleShape2D_dd1wu")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2147483648
+collision_mask = 2147484175
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(546, 550)
+rotation = -1.73363
+shape = SubResource("CapsuleShape2D_u5f3a")
+
+[node name="DesertSmallRockpile-DifTerrainE-Medium" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(550, 533)
+texture = ExtResource("9_mag7o")

@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://hrm7lushglne"]
+
+[ext_resource type="Script" path="res://rocks.gd" id="1_0m001"]
+[ext_resource type="Texture2D" uid="uid://dgsbjiwlhphoq" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain B - medium.png" id="1_ju8ux"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vedq6"]
+radius = 79.091
+height = 269.765
+
+[node name="rocks" type="StaticBody2D"]
+position = Vector2(-1, 0)
+collision_layer = 2147483648
+collision_mask = 527
+script = ExtResource("1_0m001")
+metadata/_edit_vertical_guides_ = [-139.0, 134.0]
+metadata/_edit_horizontal_guides_ = [-87.0, 104.0]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 8)
+rotation = -1.31278
+shape = SubResource("CapsuleShape2D_vedq6")
+
+[node name="DesertSunkenRocks-DifTerrainB-Medium2" type="Sprite2D" parent="."]
+position = Vector2(64, 40)
+rotation = -0.0993816
+scale = Vector2(0.502466, 0.63606)
+texture = ExtResource("1_ju8ux")
+
+[node name="DesertSunkenRocks-DifTerrainB-Medium3" type="Sprite2D" parent="."]
+position = Vector2(-66, -23)
+rotation = 2.27256
+scale = Vector2(0.502466, 0.63606)
+texture = ExtResource("1_ju8ux")
+
+[node name="DesertSunkenRocks-DifTerrainB-Medium" type="Sprite2D" parent="."]
+texture = ExtResource("1_ju8ux")

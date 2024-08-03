@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhcp11sb3wcaa"]
+
+[ext_resource type="Texture2D" uid="uid://dygsdpn4mpocp" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 2A - dark.png" id="1_mw46l"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nu5fx"]
+radius = 63.1329
+height = 219.979
+
+[node name="MountinDark" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mw46l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-44, 75)
+rotation = 1.68135
+shape = SubResource("CapsuleShape2D_nu5fx")
