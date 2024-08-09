@@ -3,7 +3,7 @@ extends Node2D
 @export var obstacle_scenes: Array= []
 
 func _ready():
-	pass 
+	_generate_obstacle()
 
 
 func _process(delta):
