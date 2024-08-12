@@ -224,7 +224,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_suvf4"]
 radius = 270.0
-height = 800.0
+height = 700.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3sxp5"]
 radius = 10200.0
@@ -269,9 +269,8 @@ animation = &"idle"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-10, -350)
+position = Vector2(-20, -310)
 shape = SubResource("CapsuleShape2D_suvf4")
-metadata/_edit_group_ = true
 
 [node name="SpawnArea" type="Area2D" parent="."]
 collision_layer = 0
@@ -292,6 +291,6 @@ monitoring = false
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
-position = Vector2(0, 34)
+position = Vector2(-9.07952, 28.7879)
 shape = SubResource("CircleShape2D_18knv")
 debug_color = Color(0.958382, 0.192083, 0.1871, 0.42)

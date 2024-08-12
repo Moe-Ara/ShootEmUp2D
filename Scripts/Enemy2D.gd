@@ -1,5 +1,7 @@
 extends Attackable
 
+class_name Enemy2D
+
 @onready var Properties=$Properties
 var speed = 600
 var attack_damage
@@ -7,7 +9,7 @@ var attack_range
 var player
 @export var slowdown_amount: float = 0.7  # Amount to reduce speed by on hit
 @export var slowdown_duration: float = 1.0  # Duration of the slowdown effect
-
+var drop_chance:float=0.5
 var original_speed: float
 var is_slowed: bool = false
 var slowdown_timer: Timer
@@ -16,10 +18,14 @@ enum{
 	IDLE,
 	ATTACK,
 	HIT,
-	DEAD
+	DEAD,
+	SURROUND
 }
+var dropped_item:bool=false #to make sure drop_item_on_death() only gets called once
 @export var state= ATTACK
-
+@export var item_drops: Array = [
+	preload("res://Scenes/ammo.tscn")
+]
 func _ready():
 	init(Properties.health)
 	attack_damage=Properties.attack_damage
@@ -27,6 +33,7 @@ func _ready():
 	original_speed=Properties.Speed
 	speed=Properties.Speed
 	hit_rate=Properties.hit_rate
+	drop_chance=Properties.drop_chance
 	slowdown_timer = Timer.new()
 	add_child(slowdown_timer)
 	slowdown_timer.wait_time = slowdown_duration
@@ -44,7 +51,8 @@ func _physics_process(delta):
 			hit(player,delta)
 		DEAD:
 			velocity=Vector2.ZERO
-	#speed=originalSpeed
+		SURROUND:
+			surround_player(delta)
 				
 func _process(delta):
 	handle_states()
@@ -57,6 +65,8 @@ func _process(delta):
 			handle_death(delta)
 		IDLE:
 			animated_sprite.play("idle")
+		SURROUND:
+			animated_sprite.play("walk")
 	
 			
 			
@@ -79,10 +89,13 @@ func hit(target,delta):
 func handle_states():
 	if is_dead:
 		state=DEAD
+		drop_items_on_death() 
 		return
 	if not player.is_dead:
 		if (player.global_position - global_position).length() <player.get_node("AttackArea").get_child(0,false).shape.radius:
 			state=HIT
+		elif (player.global_position - global_position).length() <player.get_node("AttackArea").get_child(0,false).shape.radius * 5:
+			state = SURROUND
 		else:
 			state=ATTACK
 	else:
@@ -103,3 +116,41 @@ func _on_slowdown_timeout() -> void:
 	is_slowed = false
 
 	
+func drop_items_on_death():
+	if dropped_item:
+		return
+	print("yo")
+	if item_drops.size() > 0:
+		dropped_item=true
+		var actual_drop_chance = drop_chance
+		var rand = randf() 
+
+		if rand < actual_drop_chance:
+			var drop_index = randi() % item_drops.size()  
+			var item_instance = item_drops[drop_index].instantiate()
+			item_instance.position = global_position + Vector2(1,0)
+			get_parent().add_child(item_instance)  
+			
+func surround_player(delta):
+	var desired_position = calculate_surround_position()
+	move(desired_position, delta)
+
+func calculate_surround_position() -> Vector2:
+	var enemies = get_parent().get_children()
+	var active_enemies = []
+	
+	for enemy in enemies:
+		if enemy is Enemy2D  and not enemy.is_dead:
+			active_enemies.append(enemy)
+	
+	var enemy_count = active_enemies.size()
+	var index = active_enemies.find(self)
+	
+	if enemy_count == 0:
+		return global_position 
+	
+	var angle_offset = index * (PI * 2 / enemy_count)
+	var surround_distance = attack_range * 3  
+	var surround_position = player.global_position + Vector2(cos(angle_offset), sin(angle_offset)) * surround_distance
+	
+	return surround_position

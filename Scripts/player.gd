@@ -85,7 +85,8 @@ func shoot():
 	var direction = Bullet_Marker.global_transform.x.normalized()
 	bullet_instance.rotation = Hands.rotation*animated_sprite.scale.x
 	bullet_instance.set_direction(direction)
-	get_parent().add_child(bullet_instance)
+	var bullet_container = get_parent().get_node("BulletContainer")
+	bullet_container.add_child(bullet_instance)
 	can_shoot=false
 	ammo-=1
 	

@@ -7,6 +7,7 @@ extends Node
 @export var hit_rate=0.7
 @export var can_fire=true
 @export var fire_rate=3.0
+@export var drop_chance =0.7
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
