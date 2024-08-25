@@ -119,7 +119,6 @@ func _on_slowdown_timeout() -> void:
 func drop_items_on_death():
 	if dropped_item:
 		return
-	print("yo")
 	if item_drops.size() > 0:
 		dropped_item=true
 		var actual_drop_chance = drop_chance
@@ -154,3 +153,4 @@ func calculate_surround_position() -> Vector2:
 	var surround_position = player.global_position + Vector2(cos(angle_offset), sin(angle_offset)) * surround_distance
 	
 	return surround_position
+

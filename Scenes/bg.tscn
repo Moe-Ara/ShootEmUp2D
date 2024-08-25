@@ -1,9 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4j0kckvesqv2"]
+[gd_scene load_steps=19 format=3 uid="uid://b4j0kckvesqv2"]
 
 [ext_resource type="Texture2D" uid="uid://mfqot1b6mi78" path="res://Sprites/Arid Badlands/Backgrounds/Desert Map - road-AOmark.png" id="1_rshdb"]
 [ext_resource type="Texture2D" uid="uid://bbgyjhc7k1cv" path="res://Sprites/Arid Badlands/Backgrounds/Desert_BG_2 - dark.png" id="2_vr16k"]
 [ext_resource type="Texture2D" uid="uid://c8ngu7p8v4chc" path="res://Sprites/Arid Badlands/Backgrounds/Desert_BG_2 - light.png" id="3_kkxnd"]
 [ext_resource type="Texture2D" uid="uid://dfwsxnruoffn5" path="res://Sprites/Arid Badlands/Backgrounds/Desert_BG_2 - medium.png" id="4_ewg2g"]
+[ext_resource type="Texture2D" uid="uid://cnylw3pr003sb" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large A - dark.png" id="5_65vj8"]
+[ext_resource type="Texture2D" uid="uid://d2s70qh6wteat" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large A - medium.png" id="6_uib7l"]
+[ext_resource type="Texture2D" uid="uid://dv0uvx236e7a2" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Normal A - dark.png" id="7_mpgm5"]
+[ext_resource type="Texture2D" uid="uid://g3sc1me2pd5x" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Small A - dark.png" id="8_3yn66"]
+[ext_resource type="Texture2D" uid="uid://bjxi6eto6gufy" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Small B - dark.png" id="9_nyly5"]
+[ext_resource type="Texture2D" uid="uid://4cpade58m62q" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large A - light.png" id="10_764we"]
+[ext_resource type="Texture2D" uid="uid://dpwgsw1kpptvr" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Normal A - light.png" id="11_to1im"]
+[ext_resource type="Texture2D" uid="uid://d1v32owq6kif8" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Small A - light.png" id="12_5l55n"]
+[ext_resource type="Texture2D" uid="uid://bgjkw33snvpk6" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Small B - light.png" id="13_pl8g2"]
+[ext_resource type="Texture2D" uid="uid://b08xxgodpl8r7" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large B - light.png" id="14_3txam"]
+[ext_resource type="Texture2D" uid="uid://d1hjv1xejp3il" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large B - dark.png" id="15_re717"]
+[ext_resource type="Texture2D" uid="uid://byxmja2vq8ok" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Small A - medium.png" id="16_7vffr"]
+[ext_resource type="Texture2D" uid="uid://c8lb78q6q4gx2" path="res://Sprites/Arid Badlands/Odds and Ends/Sand Patch Large B - medium.png" id="17_q81x2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2y4d"]
 size = Vector2(269, 3979.12)
@@ -87,3 +100,213 @@ collision_mask = 527
 position = Vector2(-3551, -44.9999)
 rotation = -1.04248
 shape = SubResource("RectangleShape2D_y2y4d")
+
+[node name="sand" type="Node2D" parent="."]
+
+[node name="SandPatchLargeA-Dark" type="Sprite2D" parent="sand"]
+position = Vector2(-4211, 3876)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Medium" type="Sprite2D" parent="sand"]
+position = Vector2(-3982, 3605)
+texture = ExtResource("6_uib7l")
+
+[node name="SandPatchNormalA-Dark" type="Sprite2D" parent="sand"]
+position = Vector2(-4076, 3706)
+texture = ExtResource("7_mpgm5")
+
+[node name="SandPatchSmallA-Dark" type="Sprite2D" parent="sand"]
+position = Vector2(-3745, 3554)
+texture = ExtResource("8_3yn66")
+
+[node name="SandPatchSmallB-Dark" type="Sprite2D" parent="sand"]
+position = Vector2(-3626, 3520)
+texture = ExtResource("9_nyly5")
+
+[node name="SandPatchLargeA-Dark2" type="Sprite2D" parent="sand"]
+position = Vector2(-1425.5, 3764.82)
+scale = Vector2(19.6644, 10.4496)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Light" type="Sprite2D" parent="sand"]
+position = Vector2(-4785, 14.0001)
+scale = Vector2(1.95911, 3.80832)
+texture = ExtResource("10_764we")
+
+[node name="SandPatchLargeA-Light2" type="Sprite2D" parent="sand"]
+position = Vector2(4038, 1712)
+rotation = 0.646715
+scale = Vector2(9.64536, 8.30772)
+texture = ExtResource("10_764we")
+
+[node name="SandPatchLargeA-Dark3" type="Sprite2D" parent="sand"]
+position = Vector2(4086, -939)
+rotation = -0.648993
+scale = Vector2(8.48938, 6.11527)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchNormalA-Light" type="Sprite2D" parent="sand"]
+position = Vector2(-671, -2164)
+texture = ExtResource("11_to1im")
+
+[node name="SandPatchNormalA-Light2" type="Sprite2D" parent="sand"]
+position = Vector2(-794, -2075)
+texture = ExtResource("11_to1im")
+
+[node name="SandPatchNormalA-Light3" type="Sprite2D" parent="sand"]
+position = Vector2(-497, -2243)
+texture = ExtResource("11_to1im")
+
+[node name="SandPatchSmallA-Light" type="Sprite2D" parent="sand"]
+position = Vector2(-391, -2325)
+texture = ExtResource("12_5l55n")
+
+[node name="SandPatchSmallB-Light" type="Sprite2D" parent="sand"]
+position = Vector2(-286, -2370)
+texture = ExtResource("13_pl8g2")
+
+[node name="SandPatchLargeB-Light" type="Sprite2D" parent="sand"]
+position = Vector2(-103, -2478)
+texture = ExtResource("14_3txam")
+
+[node name="SandPatchLargeB-Light2" type="Sprite2D" parent="sand"]
+position = Vector2(104, -2564)
+texture = ExtResource("14_3txam")
+
+[node name="SandPatchSmallA-Light2" type="Sprite2D" parent="sand"]
+position = Vector2(216, -2690)
+texture = ExtResource("12_5l55n")
+
+[node name="SandPatchLargeB-Light3" type="Sprite2D" parent="sand"]
+position = Vector2(382, -2762)
+texture = ExtResource("14_3txam")
+
+[node name="SandPatchSmallB-Light2" type="Sprite2D" parent="sand"]
+position = Vector2(1057, -3090)
+scale = Vector2(10.3437, 13.0192)
+texture = ExtResource("13_pl8g2")
+
+[node name="SandPatchSmallA-Light3" type="Sprite2D" parent="sand"]
+position = Vector2(1977, -3541)
+scale = Vector2(6.66273, 6.25949)
+texture = ExtResource("12_5l55n")
+
+[node name="SandPatchSmallB-Dark2" type="Sprite2D" parent="sand"]
+position = Vector2(-1885, -2267)
+scale = Vector2(8.77679, 9.38461)
+texture = ExtResource("9_nyly5")
+
+[node name="SandPatchSmallA-Dark2" type="Sprite2D" parent="sand"]
+position = Vector2(-2738, -2848)
+rotation = 0.444369
+scale = Vector2(6.29273, 5.24684)
+texture = ExtResource("8_3yn66")
+
+[node name="SandPatchNormalA-Dark2" type="Sprite2D" parent="sand"]
+position = Vector2(-3901.75, -3559.63)
+scale = Vector2(5.77071, 6.38492)
+texture = ExtResource("7_mpgm5")
+
+[node name="SandPatchLargeB-Light4" type="Sprite2D" parent="sand"]
+position = Vector2(-5170, 532)
+texture = ExtResource("14_3txam")
+
+[node name="SandPatchNormalA-Light4" type="Sprite2D" parent="sand"]
+position = Vector2(-5004, 407)
+texture = ExtResource("11_to1im")
+
+[node name="SandPatchLargeB-Light5" type="Sprite2D" parent="sand"]
+position = Vector2(-5372, 622)
+texture = ExtResource("14_3txam")
+
+[node name="SandPatchLargeA-Dark4" type="Sprite2D" parent="sand"]
+position = Vector2(-5731, 721)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeB-Dark" type="Sprite2D" parent="sand"]
+position = Vector2(-5942, 954)
+texture = ExtResource("15_re717")
+
+[node name="SandPatchLargeA-Medium2" type="Sprite2D" parent="sand"]
+position = Vector2(-5754, 905)
+texture = ExtResource("6_uib7l")
+
+[node name="SandPatchLargeA-Light3" type="Sprite2D" parent="sand"]
+position = Vector2(-6265, 1134)
+texture = ExtResource("10_764we")
+
+[node name="SandPatchSmallA-Dark3" type="Sprite2D" parent="sand"]
+position = Vector2(-6427, 1215)
+texture = ExtResource("8_3yn66")
+
+[node name="SandPatchSmallA-Medium" type="Sprite2D" parent="sand"]
+position = Vector2(-6431, 1255)
+texture = ExtResource("16_7vffr")
+
+[node name="SandPatchSmallA-Light4" type="Sprite2D" parent="sand"]
+position = Vector2(-6544, 1296)
+texture = ExtResource("12_5l55n")
+
+[node name="SandPatchLargeB-Medium" type="Sprite2D" parent="sand"]
+position = Vector2(-6651, 1408)
+texture = ExtResource("17_q81x2")
+
+[node name="SandPatchLargeB-Dark2" type="Sprite2D" parent="sand"]
+position = Vector2(-6979, 1525)
+texture = ExtResource("15_re717")
+
+[node name="SandPatchLargeA-Dark5" type="Sprite2D" parent="sand"]
+position = Vector2(-6355, 1358)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark6" type="Sprite2D" parent="sand"]
+position = Vector2(-5336, -505)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark7" type="Sprite2D" parent="sand"]
+position = Vector2(-5161, -426)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark8" type="Sprite2D" parent="sand"]
+position = Vector2(-5787, -717)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeB-Dark3" type="Sprite2D" parent="sand"]
+position = Vector2(-5531, -592)
+texture = ExtResource("15_re717")
+
+[node name="SandPatchLargeA-Dark9" type="Sprite2D" parent="sand"]
+position = Vector2(-6018, -902)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark10" type="Sprite2D" parent="sand"]
+position = Vector2(-6271, -1011)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark11" type="Sprite2D" parent="sand"]
+position = Vector2(-6574, -1155)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeA-Dark12" type="Sprite2D" parent="sand"]
+position = Vector2(-6840, -1370)
+texture = ExtResource("5_65vj8")
+
+[node name="SandPatchLargeB-Dark4" type="Sprite2D" parent="sand"]
+position = Vector2(-7027, -1455)
+texture = ExtResource("15_re717")
+
+[node name="SandPatchNormalA-Dark3" type="Sprite2D" parent="sand"]
+position = Vector2(-7236, -1625)
+texture = ExtResource("7_mpgm5")
+
+[node name="SandPatchSmallB-Dark3" type="Sprite2D" parent="sand"]
+position = Vector2(-7406, -1676)
+texture = ExtResource("9_nyly5")
+
+[node name="SandPatchNormalA-Dark4" type="Sprite2D" parent="sand"]
+position = Vector2(-7457, -1710)
+texture = ExtResource("7_mpgm5")
+
+[node name="SandPatchLargeA-Dark13" type="Sprite2D" parent="sand"]
+position = Vector2(-7655, -1777)
+texture = ExtResource("5_65vj8")
