@@ -1,12 +1,12 @@
 extends Marker2D
 @onready var Properties=get_parent().get_node("Properties")
 
-var origina_fire_rate
+var original_fire_rate
 var fire_rate
 var player
 @onready var Bullet = preload("res://Scenes/enemyBullet.tscn")
 func _ready():
-	origina_fire_rate=Properties.fire_rate
+	original_fire_rate=Properties.fire_rate
 	fire_rate=Properties.fire_rate
 	pass 
 
@@ -31,7 +31,6 @@ func fire(target,delta):
 	bullet_instance.rotation = angle
 	bullet_instance.set_direction(direction)
 	get_parent().get_parent().add_child(bullet_instance)
-	fire_rate=origina_fire_rate
-	print("fired")
+	fire_rate=original_fire_rate
 	
 	

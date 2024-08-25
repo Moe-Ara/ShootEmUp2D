@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bg2sdkct5i1p5" path="res://Sprites/Skeletons Download/004_death.png" id="3_gq5xi"]
 [ext_resource type="Texture2D" uid="uid://c6ann34ims8i4" path="res://Sprites/Skeletons Download/004_idle.png" id="4_lot3l"]
 [ext_resource type="Texture2D" uid="uid://bmwbo5cbnx3gw" path="res://Sprites/Skeletons Download/004_walking.png" id="5_klun6"]
-[ext_resource type="Script" path="res://Scripts/redSkeletonProperties.gd" id="6_fhqpp"]
+[ext_resource type="Script" path="res://Scripts/redSkeletonProperties.gd" id="6_2okpn"]
 [ext_resource type="Script" path="res://Scripts/redSkeletonFire.gd" id="7_map04"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eoqcs"]
@@ -206,7 +206,7 @@ position = Vector2(0, -2)
 shape = SubResource("CapsuleShape2D_sotbc")
 
 [node name="Properties" type="Node" parent="."]
-script = ExtResource("6_fhqpp")
+script = ExtResource("6_2okpn")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 script = ExtResource("7_map04")

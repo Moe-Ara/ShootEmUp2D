@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://cw3q8t6be3u0e"]
+[gd_scene load_steps=76 format=3 uid="uid://cw3q8t6be3u0e"]
 
 [ext_resource type="PackedScene" uid="uid://b4j0kckvesqv2" path="res://Scenes/bg.tscn" id="1_r5n2p"]
 [ext_resource type="Script" path="res://Scripts/obstacleGenerator.gd" id="3_k2ejq"]
@@ -53,10 +53,8 @@
 [ext_resource type="Texture2D" uid="uid://bbvrypl7bkln1" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 B-i.png" id="40_tw0hd"]
 [ext_resource type="Texture2D" uid="uid://bhvvq7uhcjxxl" path="res://Sprites/Arid Badlands/Structures/Building C sz1 noshadow.png" id="41_5j7xv"]
 [ext_resource type="Texture2D" uid="uid://gncsy8gbn5sl" path="res://Sprites/Arid Badlands/Structures/Building C1.2 sz1 shadow.png" id="42_lkva4"]
-[ext_resource type="Texture2D" uid="uid://dxfyg4r5xyp5n" path="res://Sprites/Arid Badlands/Waterways/Sandy  Waterway 1 - coast short 1A.png" id="43_25ssu"]
 [ext_resource type="Texture2D" uid="uid://cvlrifbg87fnp" path="res://Sprites/Arid Badlands/Structures/Building B sz2 noshadow.png" id="44_n5ijs"]
 [ext_resource type="Texture2D" uid="uid://dmo2grjwn1hto" path="res://Sprites/Arid Badlands/Structures/Building B1.2 sz2 shadow.png" id="45_scd18"]
-[ext_resource type="Texture2D" uid="uid://cylxvch0cb0bq" path="res://Sprites/Arid Badlands/Waterways/Sandy Waterway 1 - coast corner east.png" id="46_ujgc7"]
 [ext_resource type="Texture2D" uid="uid://dgsbjiwlhphoq" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain B - medium.png" id="47_khftt"]
 [ext_resource type="Texture2D" uid="uid://ds0inrqwh54nt" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain C - light.png" id="48_f8mxe"]
 [ext_resource type="Texture2D" uid="uid://bbevupxoml0un" path="res://Sprites/Arid Badlands/Rocks/Dersert Rocks - Size 2A - light.png" id="49_2vbdd"]
@@ -76,6 +74,7 @@
 [ext_resource type="Texture2D" uid="uid://vdq5sn7rxc0d" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain B - dark.png" id="63_scshs"]
 [ext_resource type="Texture2D" uid="uid://xjfn431j8hk" path="res://Sprites/Arid Badlands/Rocks/Desert Sunken Rocks- Dif terrain D - dark.png" id="64_773nx"]
 [ext_resource type="Texture2D" uid="uid://pbql5g43fmpu" path="res://Sprites/Arid Badlands/Flora/Giant Cactus Patch 2x2 A.png" id="65_jbiau"]
+[ext_resource type="PackedScene" uid="uid://cofw44anqi1ak" path="res://Scenes/hud.tscn" id="75_sqb3g"]
 
 [node name="Game" type="Node2D"]
 
@@ -87,25 +86,57 @@ script = ExtResource("17_p021o")
 [node name="BordersTop" type="Node2D" parent="."]
 position = Vector2(2038, 257)
 
-[node name="SandyWaterway1-CoastShort1a3" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-3679, -1454)
-texture = ExtResource("43_25ssu")
+[node name="SandPatchLargeA-Dark4" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3647.5, -1463.5)
+texture = ExtResource("27_4kgwe")
+
+[node name="SandPatchLargeB-Dark2" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3320, -1602)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark3" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3889, -1263)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark4" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-4237, -1080)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark5" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-4510, -951)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark6" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-4714, -792)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark7" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-4336, -915)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark8" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3050, -1742)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark9" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-2909, -1943)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark10" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-2792, -1835)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark11" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3331, -1499)
+texture = ExtResource("58_bmikq")
+
+[node name="SandPatchLargeB-Dark12" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-2495, -2056)
+texture = ExtResource("58_bmikq")
 
 [node name="BuildingG1_2Sz1Noshadow2" type="Sprite2D" parent="BordersTop"]
 position = Vector2(-5299, -465)
 texture = ExtResource("11_iilee")
-
-[node name="SandyWaterway1-CoastShort1a" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-4953, -736)
-texture = ExtResource("43_25ssu")
-
-[node name="SandyWaterway1-CoastShort1a2" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-4705, -879)
-texture = ExtResource("43_25ssu")
-
-[node name="SandyWaterway1-CoastCornerEast" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-4462, -1032)
-texture = ExtResource("46_ujgc7")
 
 [node name="DesertSunkenRocks-DifTerrainB-Medium" type="Sprite2D" parent="BordersTop"]
 position = Vector2(-4692, -906)
@@ -151,18 +182,6 @@ texture = ExtResource("51_5rxtv")
 position = Vector2(-3793, -1324)
 texture = ExtResource("33_2xti5")
 
-[node name="SandyWaterway1-CoastShort1a4" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-3425, -1603)
-texture = ExtResource("43_25ssu")
-
-[node name="SandyWaterway1-CoastShort1a5" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-3168, -1751)
-texture = ExtResource("43_25ssu")
-
-[node name="SandyWaterway1-CoastShort1a6" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-2914, -1900)
-texture = ExtResource("43_25ssu")
-
 [node name="DersertRocks-Size1a-Dark4" type="Sprite2D" parent="BordersTop"]
 position = Vector2(-3236, -1781)
 texture = ExtResource("17_yxmhv")
@@ -175,8 +194,16 @@ texture = ExtResource("52_jd14f")
 position = Vector2(-2701, -2141)
 texture = ExtResource("31_kp04x")
 
+[node name="DersertRocks-Size2a-Dark6" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-2701, -2141)
+texture = ExtResource("31_kp04x")
+
 [node name="GiantCactusPatch2x2A-i5" type="Sprite2D" parent="BordersTop"]
 position = Vector2(-2108, -2301)
+texture = ExtResource("30_x2jvv")
+
+[node name="GiantCactusPatch2x2A-i7" type="Sprite2D" parent="BordersTop"]
+position = Vector2(-3633, -1510)
 texture = ExtResource("30_x2jvv")
 
 [node name="DersertRocks-Size3a-Dark" type="Sprite2D" parent="BordersTop"]
@@ -192,7 +219,7 @@ position = Vector2(-2619, -2000)
 texture = ExtResource("55_x822s")
 
 [node name="DersertRocks-Size2c-Dark" type="Sprite2D" parent="BordersTop"]
-position = Vector2(-2894, -2055)
+position = Vector2(-3565, -1453)
 texture = ExtResource("56_pds68")
 
 [node name="DersertRocks-Size2b-Dark2" type="Sprite2D" parent="BordersTop"]
@@ -537,3 +564,5 @@ position = Vector2(832, -10)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Playable"]
 polygon = PackedVector2Array(-3299, -69, 2, -1966, 3305, -36, 2, 1925)
+
+[node name="HUD" parent="." instance=ExtResource("75_sqb3g")]

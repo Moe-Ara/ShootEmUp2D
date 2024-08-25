@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://cofw44anqi1ak"]
+
+[ext_resource type="Script" path="res://Scenes/hud.gd" id="1_1025r"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_1025r")
+
+[node name="HPBar" type="ProgressBar" parent="."]
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 309.0
+offset_bottom = 30.0
+
+[node name="Ammo" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -56.0
+offset_top = -36.0
+grow_horizontal = 0
+grow_vertical = 0
