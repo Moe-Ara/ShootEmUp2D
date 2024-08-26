@@ -36,6 +36,8 @@ Throughout the development of this project, the following skills were utilized a
 - **Enhanced AI**: Add more sophisticated enemy behaviors and tactics.
 - **Power-ups**: Introduce different power-ups to provide variety and enhance gameplay.
 - **Boss Fights**: Implement boss fights to challenge the player at specific waves.
+- **Sound**: Add Sound effects
+- **Levels**: Add more levels
 
 ## Acknowledgments
 
